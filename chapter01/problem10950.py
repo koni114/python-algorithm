@@ -5,4 +5,3 @@ testCases = int(f.readline())
 
 for i in range(testCases):
     tmp = [ int(i) for i in f.readline().split() ]
-    print(sum(tmp))
