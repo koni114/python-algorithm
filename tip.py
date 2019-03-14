@@ -48,3 +48,6 @@ def asterisk_test(a, **kargs):
     print(type(kargs))
 asterisk_test(1, b=2, c=3, d=4, e=5, f=6)
 
+## bfs 할 때, node를 방문할 때, check = True 를 해주어야 함
+## 왜 그런지 모르겠으면, 2 -> 4 , 3 -> 4를 생각해보자.
+## https://www.acmicpc.net/blog/view/70
