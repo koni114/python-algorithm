@@ -35,7 +35,7 @@ graph = {}
 result = 0
 
 node, edge = [ int(i) for i in f.readline().split()]
-check = [False] * node
+check = [False] * (node+1)
 queue = deque()
 for i in range(1, node+1): graph[i] = []
 for i in range(edge):
@@ -45,12 +45,18 @@ for i in range(edge):
 
 def bfs(start):
     check[start] = True
-    global result
     queue.appendleft(start)
 
     while(len(queue) != 0):
-        queue.append()
+        n = queue.pop()
+        for i in graph[n]:
+            if not check[i]:
+                queue.appendleft(i)
+                check[i] = True
 
+for i in range(1, node+1):
+    if not check[i]:
+        bfs(i)
+        result += 1
 
-
-
+print(result, end = "")
