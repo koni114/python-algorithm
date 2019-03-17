@@ -51,3 +51,61 @@ asterisk_test(1, b=2, c=3, d=4, e=5, f=6)
 ## bfs 할 때, node를 방문할 때, check = True 를 해주어야 함
 ## 왜 그런지 모르겠으면, 2 -> 4 , 3 -> 4를 생각해보자.
 ## https://www.acmicpc.net/blog/view/70
+
+# 구조체 만들기
+from collections import namedtuple, deque
+list_seq = deque()
+Point = namedtuple('Point', ['x', 'y'])
+
+# 정렬 복습!
+class student:
+    def __init__(self, korean, english, maths):
+        self.korean  = korean
+        self.english = english
+        self.maths = maths
+
+    def __repr__(self):
+        return repr((self.korean, self.english, self.maths))
+
+
+students_scores = {
+    student(100, 50, 30),
+    student(20, 30, 50),
+    student(50, 60, 20),
+}
+
+sorted(students_scores, key= lambda tt: tt.maths, reverse = False)
+
+from collections import namedtuple
+Point = namedtuple('Point', ['x', 'y'])
+p1 = Point(x=1, y=10)
+
+
+# sorted 함수 쓸 때. return 받아서 다시 할당 해주어야 함
+# 분명 dict type 에서 return 받을 일이 생길꺼라고 생각
+
+from collections import OrderedDict
+dict_seq = OrderedDict()
+
+dict_seq[1] = 30
+dict_seq[2] = 20
+dict_seq[3] = 10
+
+dict_seq = sorted(dict_seq.items(), key = lambda tt : tt[1])
+
+class test:
+    def __init__(self, name, age, house):
+        self.name = name
+        self.age  = age
+        self.house = house
+
+    def __repr__(self):
+        return repr((self.name, self.age, self.house))
+
+student_test = {
+    test('HJH', 28, 'bundang'),
+    test('LMH', 27, 'bundang'),
+    test('HMH', 60, 'bundang')
+}
+
+sorted(student_test, key = lambda tt : tt.age, reverse = False)
