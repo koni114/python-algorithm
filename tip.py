@@ -109,3 +109,32 @@ student_test = {
 }
 
 sorted(student_test, key = lambda tt : tt.age, reverse = False)
+
+# 2개 이상의 정렬 조건을 추가하는 경우,
+# ex) 국어 점수로 우선적으로 정렬한 후, 같으면 수학점수로 정렬하고 싶은 경우,
+# sorted 함수의 key 값에 함수를 (국어, 점수) parameter로 setting 해 주면 된다
+# ex) sorted(test, key = lambda x: (국어, 점수), reverse = False)
+
+# 2019_03_23
+# 진법 전환하기 : bin, oct, dec, hex
+# 2, 8, 16 -> 10진법으로 전환
+print(int('aa', 16))
+print(int('56', 8))
+print(int('1001', 2))
+
+# 10진법 -> 2, 8, 16
+# bin, hex, oct 함수  이용! : 내장 함수
+a = 100
+bin(100)[2:] # 결과 값 0b + 2진수로 나옴. 따라서 index 2번 부터 사용
+
+# divmod : return 몫, 나머지
+
+# ** 아스키 코드 <-> 숫자 변환
+# 아스키코드번호 -> 문자 :  chr
+# 문자열 -> 아스키코드번호 : ord
+# 아스키 코드 65번 -> A ~  : 꼭 기억하자
+
+
+
+
+
