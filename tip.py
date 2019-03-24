@@ -134,7 +134,28 @@ bin(100)[2:] # 결과 값 0b + 2진수로 나옴. 따라서 index 2번 부터 �
 # 문자열 -> 아스키코드번호 : ord
 # 아스키 코드 65번 -> A ~  : 꼭 기억하자
 
+# for 문의 활용
+a = [(1,2), (2,3), (3,4)]
+for (first, second) in a:
+    print(first, second)
 
+a      = [1,2,3,4]
+result = [i for i in a if i % 2 == 0]
+result = [a*b for a in range(1,6) for b in range(1,10) ]
 
+# 입력 값이 몇개가 되는지 모를 때
 
+def sum_many(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    return sum
 
+# 초기화 하고 싶다면, 반드시 가장 뒤에 변수 배치
+def say_myself(name, old, man = True):
+    pass
+
+# 여러개를 구분자로 자르기
+import re
+test = "50-50+40"
+re.split('\W+', test)
