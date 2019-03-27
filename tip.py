@@ -159,3 +159,13 @@ def say_myself(name, old, man = True):
 import re
 test = "50-50+40"
 re.split('\W+', test)
+
+## &은 무엇인가..?
+a = 10
+b = -10
+while(a >= 1 & b <= 2):
+    print(a,b)
+    a -= 1
+    b += 1
+
+print(0 & 0)
