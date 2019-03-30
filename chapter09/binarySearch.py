@@ -25,5 +25,3 @@ def binarySearch(left, right):
         binarySearch(left, right)
 
 binarySearch(0, 9)
-
-
