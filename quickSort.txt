@@ -17,4 +17,7 @@
   탐색, 교환 과정은 low, high가 엇갈릴때 까지 계속한다.
   엇갈렸다면, low, high 값 사이에 pivot을 배치한다. (left, right와 값을 교환)
 
-- code point
+- code point 살펴보기
+1. quickSort function
+pivot를 항상 전체 배열의 중간으로 설정. -> 성능을 개선하기 위함
+그 다음 pivot 위치의 값과  left 위치의 값을 swap. 그렇게 하지 않으면, 
