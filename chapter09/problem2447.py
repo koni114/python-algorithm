@@ -25,3 +25,7 @@ def starPoint(x, y, size):
 
 starPoint(0,0,n)
 [print("".join(i)) for i in star]
+
+
+import math
+math.log2()
