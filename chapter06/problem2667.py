@@ -56,3 +56,4 @@ print(len(house_seq))
 [print(i) for i in sorted(house_seq)]
 
 
+

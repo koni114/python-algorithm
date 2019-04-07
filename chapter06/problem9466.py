@@ -63,6 +63,7 @@ for i in range(n):
         for k in list_tmp:
             check2[k] = True
 
+
     for j in range(1, node+1):
         if not check2[j]:
             dfs(j)
