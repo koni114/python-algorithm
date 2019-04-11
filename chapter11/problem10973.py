@@ -1,4 +1,4 @@
-# 다음 순열(next permutation)
+# 이전 순열(permutation)
 import sys
 f = sys.stdin
 n = int(f.readline().strip())
