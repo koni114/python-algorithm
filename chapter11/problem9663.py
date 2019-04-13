@@ -16,9 +16,8 @@ def queen(num):
     check += 1
     if num >= N:
         result += 1
-        return
+
     for j in range(N):
-        print(num, j)
         if not checkCol[j] and not checkRight[(N-1)+(j-num)] and not checkLeft[num+j] and not a[num][j]:
             a[num][j] = True
             checkCol[j] = True
@@ -32,5 +31,6 @@ def queen(num):
             checkLeft[num + j] = False
 
 queen(0)
-print(result)
-print(check)
+print(result, end = "")
+
+checkDict = 

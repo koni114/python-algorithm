@@ -172,3 +172,13 @@ print(0 & 0)
 
 ## 비트 연산
 # &(and), |(or), ~(not), ^(xor)
+
+# 확인하기
+# 더하기
+# 빼기
+# toggle
+
+#
+import sys
+import os
+os.getcwd()
