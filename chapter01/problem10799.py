@@ -1,3 +1,9 @@
+# 쇠막대기
+# 백준 문제 참조,
+
+# 풀이 방법 : stack을 이용해서 풀이
+
+
 import sys
 f = sys.stdin
 pipe = f.readline().strip()

@@ -10,6 +10,13 @@
 # 1 -> 9
 # 2 -> 17
 
+# 풀이 방법 : dp
+# dp[i][j] = i번째 자리수에서 끝자리수가 j인 수의 경우의 수
+
+# dp[i][j] = dp[i-1][j-1] + dp[i-1][j+1] ( 1 <= j <= 8)
+# dp[i][j] = dp[i-1][j-1] ( j = 9 )
+# dp[i][j] = dp[i-1][j+1] ( j = 0)
+
 import sys
 f = sys.stdin
 n = int(f.readline())

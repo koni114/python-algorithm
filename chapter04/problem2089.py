@@ -21,3 +21,8 @@ while(abs(n) >= 2):
     elif n == -1: result = "11" + result
 
 print(result)
+
+arr = [['a', 1], ['c', 3], ['c', 1]]
+sorted(arr, key= lambda x : (x[0], x[1]), reverse = False)
+
+
